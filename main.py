@@ -30,7 +30,7 @@ while game_is_on:
     if timmy.is_finish():
         timmy.go_start()
         car_manager.level()
-        scoreboard.level()
+        scoreboard.update()
         
 
 

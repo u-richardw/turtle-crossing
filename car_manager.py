@@ -27,3 +27,8 @@ class CarManager:
     def level(self):
         self.car_speed += MOVE_INCREMENT
 
+    def remove_car(self):
+        for i in self.cars:
+            if i.xcor() < -305:
+                self.cars.remove(i)
+
